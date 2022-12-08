@@ -165,7 +165,7 @@ class GoogleSignInPlugin extends GoogleSignInPlatform {
 
     final auth2.GoogleUser? currentUser =
         auth2.getAuthInstance()?.currentUser?.get();
-    final auth2.AuthResponse? response = currentUser?.getAuthResponse();
+    final auth2.AuthResponse? response = currentUser?.getAuthResponse(true);
 
     return GoogleSignInTokenData(
         idToken: response?.id_token, accessToken: response?.access_token);
