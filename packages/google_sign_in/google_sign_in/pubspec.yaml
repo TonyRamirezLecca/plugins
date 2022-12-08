@@ -30,7 +30,7 @@ dependencies:
   google_sign_in_web:
     git:
       url: https://github.com/TonyRamirezLecca/plugins
-      path: packages/google_sign_in/google_sign_in/google_sign_in_web
+      path: packages/google_sign_in/google_sign_in_web
       ref: main
 
 dev_dependencies:
